@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.165.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leetcode downloader</title>
+    
+    <meta name="description" content="CLI app to download leetcode submissions" />
+     
+    <meta name="github-repo" content="https://github.com/alwaldend/src" />
+      
+    <link rel="stylesheet" href="/scss/landing.min.757a78e91e368eeac2f0cb4833153359a2f027c8e1ec3cf51681f3f623b018da.css" />
+     
+  </head>
+  <body>
+    <header class="landing-topbar">
+      <a class="landing-brand" href="/">Leetcode Downloader</a>
+      <nav class="landing-nav" aria-label="Project links">
+        
+        <a href="https://alwaldend.com/docs/projects/leetcode_downloader/">Docs</a>
+        
+        <a href="https://github.com/alwaldend/src">Github</a>
+        
+      </nav>
+    </header>
+    <main class="landing-container">
+      <div class="landing-header">
+        <h1>Leetcode downloader</h1>
+        <div class="btn-group" role="group" aria-label="Project links">
+          
+          <a class="btn btn-outline-primary" href="https://alwaldend.com/docs/projects/leetcode_downloader/">Docs</a>
+          
+          <a class="btn btn-outline-primary" href="https://github.com/alwaldend/src">Github</a>
+          
+        </div>
+      </div>
+      
+      <p class="landing-description">CLI app to download leetcode submissions</p>
+       
+      <p class="landing-meta">Built with go, js, bzl.</p>
+      
+      <div class="landing-readme"><h2 id="links">Links</h2>
+<ul>
+<li>Source code: <a
+  href="https://github.com/alwaldend/src/tree/master/projects/leetcode_downloader"
+  
+  >https://github.com/alwaldend/src/tree/master/projects/leetcode_downloader</a
+>
+</li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li>CLI and bzl code to generate submission docs</li>
+<li><a
+  href="https://www.tampermonkey.net/"
+  
+  >Tampermonkey</a
+>
+ script to download submissions</li>
+<li>CLI to download submissions (Doesn&rsquo;t work because of bot protection)</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<h3 id="generate-submission-from-a-submission-file">Generate submission from a submission file</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>bazel run //projects/leetcode_downloader -- <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --submissions-file <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>PWD<span style="color:#e6db74">}</span><span style="color:#e6db74">/out/submissions.json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    --root-dir <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>PWD<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>    generate
+</span></span></code></pre></div><h2 id="help">Help</h2>
+<pre tabindex="0"><code>Usage of flags:
+  -base_url string
+    	 (default &#34;https://leetcode.com&#34;)
+  -cookie string
+
+  -limit uint
+    	 (default 20)
+  -offset uint
+
+  -root-dir string
+    	 (default &#34;${PWD}&#34;)
+  -submissions-file string
+</code></pre></div>
+    </main>
+    <footer class="landing-footer">
+      <p>Generated from the project README.</p>
+    </footer>
+  </body>
+</html>
